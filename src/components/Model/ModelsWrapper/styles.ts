@@ -5,3 +5,11 @@ export const Container = styled.div`
     scroll-snap-type: y mandatory; // y = top to bottom
     overflow-y: scroll;
 `;
+
+export const OverlaysRoot = styled.div`
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+`
