@@ -41,6 +41,10 @@ const ModelOverlay: React.FC<Props> = ({model, children}) => {
     [0, 1, 1, 0]
     )
 
+  const pointerEvents = useTransform(opacity, value => 
+    value > 0 ? 'auto' : 'none'
+  )
+
   return (
     <Container style={{opacity}}>
       {children}
